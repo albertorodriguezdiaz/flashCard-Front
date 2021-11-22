@@ -1,9 +1,28 @@
 import React from 'react';
+import cards from './cards';
+import FlashCard from './components/flashcard/FlashCard';
 
+const items = cards;
 
 function App() {
+
+  const selectCard = (card) =>{
+    const sc = Math.floor(Math.random() * 20) +1;
+    return items[sc];
+     
+  }
+
   return (
-    <h1>Flash Card English</h1>
+    <div className="flashCard">
+      <h1>Flash Card English</h1>
+
+      <FlashCard
+        card = {selectCard(items)}
+      />
+
+
+    </div>
+      
   );
 }
 
