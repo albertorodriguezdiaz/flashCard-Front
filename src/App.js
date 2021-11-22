@@ -7,7 +7,7 @@ const items = cards;
 function App() {
 
   const selectCard = (card) =>{
-    const sc = Math.floor(Math.random() * 20) +1;
+    const sc = Math.floor(Math.random() * items.length) +1;
     return items[sc];
      
   }

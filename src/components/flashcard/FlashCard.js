@@ -6,10 +6,10 @@ const FlashCard = ({card}) => {
 
     return ( 
         <div className="card" key={id}>
-            <p>{id}</p>
+            <p className="idText">{id}</p>
             <h2>{word}</h2>
             <h3>{meaning}</h3>
-            <p>{kind}</p>
+            <p className="kindText">{kind}</p>
         </div>
      );
 }
