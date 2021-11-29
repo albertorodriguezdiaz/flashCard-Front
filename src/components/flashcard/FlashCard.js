@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FlashCard = ({card}) => {
+const FlashCard = ({card, time}) => {
 
     const {id, word, meaning, kind} = card;
 
@@ -10,6 +10,7 @@ const FlashCard = ({card}) => {
             <h2>{word}</h2>
             <h3>{meaning}</h3>
             <p className="kindText">{kind}</p>
+            <p className="idTime">{time}</p>
         </div>
      );
 }
